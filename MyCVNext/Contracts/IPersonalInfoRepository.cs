@@ -9,7 +9,7 @@ namespace Logic.Contracts
 {
     public interface IPersonalInfoRepository
     {
-        List<PersonalInfo> GetPersonalInfo();
+        PersonalInfo GetPersonalInfo();
         void SavePersonalInfo(PersonalInfo model);
     }
 }

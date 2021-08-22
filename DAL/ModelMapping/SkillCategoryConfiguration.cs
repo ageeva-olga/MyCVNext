@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.ModelMapping
 {
-    public class SkillCategoryConfiguration: IEntityTypeConfiguration<SkillCategory>
+    public class SkillCategoryConfiguration : IEntityTypeConfiguration<SkillCategory>
     {
         public void Configure(EntityTypeBuilder<SkillCategory> builder)
         {
@@ -23,4 +23,5 @@ namespace DAL.ModelMapping
                  .WithOne(p => p.SkillCategory)
                  .HasForeignKey(x => x.SkillCategoryId);
         }
+    }
 }

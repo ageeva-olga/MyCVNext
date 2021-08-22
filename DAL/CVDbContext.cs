@@ -16,7 +16,7 @@ namespace DAL
         public DbSet<SkillCategory> SkillsCategory { get; set; }
         public DbSet<Skill> Skills { get; set; }
         public DbSet<WorkExperience> WorksExperience { get; set; }
-        private string _conectionString = "Server=.\\SQLEXPRESS;Database=courcedb;Trusted_Connection=True;";
+        private string _conectionString = "Server=.\\SQLEXPRESS;Database=myCVdb;Trusted_Connection=True;";
 
         public CVDbContext()
         {

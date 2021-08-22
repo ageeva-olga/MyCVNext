@@ -15,11 +15,11 @@ namespace DAL.Repository
         {
             _conectionString = connectionString;
         }
-        public List<PersonalInfo> GetPersonalInfo()
+        public PersonalInfo GetPersonalInfo()
         {
             using (CVDbContext db = new CVDbContext(_conectionString))
             {
-                return db.PersonalsInfo.ToList();
+                return db.PersonalsInfo.FirstOrDefault();
             }
         }
 
