@@ -12,7 +12,7 @@ namespace DAL
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            var personalInfo = new PersonalInfo() {Name = "Olga", Surname = "Ageeva", Email = "olga@mail.ru", Phone = "+7568652563" };
+            var personalInfo = new PersonalInfo() {Name = "Olga", Surname = "Ageeva", Email = "olga@mail.ru", Phone = "+7568652563", Id = "1"};
             var educat = new Education() { Begin = 2017, End = 2021, SchoolName = "Lobachevski University", Id = Guid.NewGuid()};
             var workExp = new WorkExperience() { Id = Guid.NewGuid(), Begin = 2018, End = 2021, WorkName = "University", PositionName = "Student" };
             var skillCat = new SkillCategory() { Id = Guid.NewGuid(), Name = "Language"};
